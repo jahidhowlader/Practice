@@ -1,0 +1,61 @@
+
+form{
+    border: 5px solid lightblue;
+    box-shadow: 5px 5px 10px lightblue;
+    padding: 20px;
+    width: 600px;
+}
+.form{
+    margin-bottom: 100px;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+input{
+    margin-left: 5px;
+}
+fieldset{
+    width: 500px;
+    margin-bottom: 20px;
+}
+td, th{
+    border: 1px solid;
+    padding: 10px;
+}
+table{
+    border: 1px solid;
+    text-align: center;
+}
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 580px;
+    border: 1px solid;
+    padding: 5px;
+    /* padding: 5px 0px 10px 10px; */
+}
+
+nav{
+    margin-bottom: 40px;   
+}
+
+nav ul{
+    display: flex;
+}
+
+
+nav li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+nav li:hover{
+border-bottom: 3px solid lightblue;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
