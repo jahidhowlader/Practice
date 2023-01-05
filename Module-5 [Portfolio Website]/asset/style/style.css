@@ -155,7 +155,7 @@ section {
 }
 
 /* Resume Style */
-.resume-content{
+.resume-content {
     display: flex;
     gap: 24px;
 }
@@ -166,34 +166,37 @@ section {
 }
 
 
-.resume-catagory{
+.resume-catagory {
     font-size: 30px;
     font-weight: 700;
 }
 
 
-.resume-item .title{
+.resume-item .title {
     font-size: 25px;
     font-weight: 700;
     padding: 30px 0 10px 0;
 }
 
-.resume-item .sub-title{
+.resume-item .sub-title {
     color: #757575;
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 20px;
 }
 
-.resume-item .description{
+.resume-item .description {
     color: #757575;
     font-size: 16px;
     line-height: 28px;
 
 }
+
 hr {
     margin: 30px 0;
-}* {
+}
+
+* {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
@@ -350,7 +353,7 @@ section {
 }
 
 /* Resume Style */
-.resume-content{
+.resume-content {
     display: flex;
     gap: 24px;
 }
@@ -362,41 +365,73 @@ section {
 
 }
 
-/* .resume-section button{
-    margin: 50px 0 113px 0;
-    justify-content: space-between;
-} */
-
-.resume-button{
+.resume-button {
     text-align: center;
     margin: 50px 0 113px 0;
 }
 
-.resume-catagory{
+.resume-catagory {
     font-size: 30px;
     font-weight: 700;
 }
 
 
-.resume-item .title{
+.resume-item .title {
     font-size: 25px;
     font-weight: 700;
     padding: 30px 0 10px 0;
 }
 
-.resume-item .sub-title{
+.resume-item .sub-title {
     color: #757575;
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 20px;
 }
 
-.resume-item .description{
+.resume-item .description {
     color: #757575;
     font-size: 16px;
     line-height: 28px;
 
 }
+
 hr {
     margin: 30px 0;
+}
+
+/* Footer Section */
+.footer-section {
+    display: flex;
+    gap: 117px;
+    background: #FFF8F3;
+    /* padding: 230px; */
+}
+
+.footer-item {
+    padding: 130px 230px;
+}
+
+.footer-section a {
+    padding-right: 24px;
+    text-decoration: none;
+}
+
+.footer-description {
+    padding: 20px 0 30px 0;
+    font-size: 18px;
+    list-style: 28px;
+}
+
+.footer-section input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 18px 30px;
+    margin-bottom: 24px;
+    border: 0;
+}
+
+.footer-section input[type="text"] {
+    margin-top: 28px;
 }
