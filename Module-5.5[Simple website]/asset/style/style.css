@@ -51,25 +51,24 @@ body {
     padding: 130px 375px;
 }
 
-.donate-content{
-    text-align: center;
-}
-
 .donate-title {
     font-size: 45px;
     font-weight: 700;
+    text-align: center;
 }
 
 .donate-description {
     font-size: 18px;
     line-height: 28px;
     padding: 20px 0 50px 0;
+    text-align: center;
 }
 
 .donate-container {
     justify-content: center;
     display: flex;
     gap: 22PX;
+    text-align: center;
 }
 
 .donate-ammount {
@@ -78,51 +77,53 @@ body {
     font-size: 30PX;
     font-weight: 700;
     width: 136PX;
-    height: 123PX;
+
+    padding: 40px 0;
 }
 
-.other-ammount{
+.other-ammount {
     text-align: center;
 }
 
 .select-ammount {
     background: #FFEEEE;
     border: 2px solid #FF5959;
-    color:#FF5959;
+    color: #FF5959;
     border-radius: 5PX;
     font-size: 30PX;
     font-weight: 700;
     width: 136PX;
-    height: 123PX;
+    padding: 40px 0;
 }
 
-.donate-section input{
+.donate-section input {
     width: 100%;
     border: none;
     margin: 60px 0 20px 0;
-    border-bottom: 1px solid #DADADA
-    ;
+    border-bottom: 1px solid #DADADA;
     text-align: center;
     font-size: 18px;
     padding: 10px 0;
 }
 
 /* Donate Plan Section Style */
-.donate-plan{
-    padding: 0 157px;
+.donate-plan {
+    padding: 0;
 
 }
 
-.donate-content{
-    padding: 0 218px;
+.donate-content {
+    padding: 0 375px;
+    text-align: center;
 }
 
-.donateplan-container{
+.donateplan-container {
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 
-.donateplan-item{
+.donateplan-item1 {
     width: 360px;
     height: 352px;
     background: rgba(79, 157, 166, 0.1);
@@ -131,39 +132,61 @@ body {
     margin-bottom: 130px;
 }
 
-.donateplan-container h3{
+.donateplan-item2 {
+    width: 360px;
+    height: 352px;
+    background: rgba(255, 89, 89, 0.1);
+    padding: 63px 22px 0 23px;
+    border-radius: 5px;
+    margin-bottom: 130px;
+}
+
+.donateplan-item3 {
+    width: 360px;
+    height: 352px;
+    background: #FFF4D6;
+    padding: 63px 22px 0 23px;
+    border-radius: 5px;
+    margin-bottom: 130px;
+}
+
+.donateplan-container h3 {
     font-weight: 600;
     font-size: 24px;
     padding: 31px 0 16px 0;
 }
 
-.donateplan-container p{
+.donateplan-container p {
     line-height: 24px;
     font-size: 20px;
     font-weight: 200;
 }
 
 /* Donation Section Style */
-.donation-content{
+.donation-content {
     display: flex;
     gap: 83px;
-    padding:0 252px 100px 0;
+    padding: 0 252px 100px 90px;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.donation h2{
+.donation h2 {
     font-size: 45px;
     font-weight: 700;
 }
+
 .donation p {
     font-size: 18px;
     padding: 20px 0;
 }
 
-.donation img{
+.donation img {
     width: 456px;
     height: 477px;
+    border-radius: 5px;
 }
+
 .donation button {
     margin-top: 10px;
 }
