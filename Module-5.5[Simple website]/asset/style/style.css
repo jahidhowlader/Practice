@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    ;
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.primary-btn {
+    background: #FF5959;
+    border: none;
+    padding: 16px 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* Header Style */
+.header {
+    background: rgba(0, 0, 0, 0.4) url('../images/donation1.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.header-section {
+    text-align: center;
+    color: white;
+    padding: 175px 307px;
+}
+
+.header-title {
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.header-description {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 20px 0 30px 0;
+}
+
+/* Donate Section Style*/
+.donate-section {
+    padding: 130px 375px;
+    text-align: center;
+}
+
+.donate-title {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.donate-description {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 20px 0 50px 0;
+}
+
+.donate-container {
+    justify-content: center;
+    display: flex;
+    gap: 22PX;
+}
+
+.donate-ammount {
+    background: #FAFAFA;
+    border-radius: 5PX;
+    font-size: 30PX;
+    font-weight: 700;
+    width: 136PX;
+    height: 123PX;
+}
+
+.select-ammount {
+    background: #FFEEEE;
+    border: 2px solid #FF5959;
+    color:#FF5959;
+    border-radius: 5PX;
+    font-size: 30PX;
+    font-weight: 700;
+    width: 136PX;
+    height: 123PX;
+}
+
+.donate-section input{
+    width: 100%;
+    border: none;
+    margin: 60px 0 20px 0;
+    border-bottom: 1px solid #DADADA
+    ;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+/* Donate Plan Section Style */
+.donate-plan{
+    padding: 0 157px;
+
+}
+
+.donateplan-container{
+    display: flex;
+    gap: 24px;
+}
+
+.donateplan-item{
+    width: 360px;
+    height: 352px;
+}
+
+.donateplan-container h3{
+    font-weight: 600;
+    font-size: 24px;
+    padding: 31px 0 16px 0;
+}
