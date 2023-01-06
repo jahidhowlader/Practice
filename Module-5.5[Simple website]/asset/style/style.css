@@ -49,6 +49,9 @@ body {
 /* Donate Section Style*/
 .donate-section {
     padding: 130px 375px;
+}
+
+.donate-content{
     text-align: center;
 }
 
@@ -76,6 +79,10 @@ body {
     font-weight: 700;
     width: 136PX;
     height: 123PX;
+}
+
+.other-ammount{
+    text-align: center;
 }
 
 .select-ammount {
@@ -106,6 +113,10 @@ body {
 
 }
 
+.donate-content{
+    padding: 0 218px;
+}
+
 .donateplan-container{
     display: flex;
     gap: 24px;
@@ -114,10 +125,45 @@ body {
 .donateplan-item{
     width: 360px;
     height: 352px;
+    background: rgba(79, 157, 166, 0.1);
+    padding: 63px 22px 0 23px;
+    border-radius: 5px;
+    margin-bottom: 130px;
 }
 
 .donateplan-container h3{
     font-weight: 600;
     font-size: 24px;
     padding: 31px 0 16px 0;
+}
+
+.donateplan-container p{
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+/* Donation Section Style */
+.donation-content{
+    display: flex;
+    gap: 83px;
+    padding:0 252px 100px 0;
+    align-items: center;
+}
+
+.donation h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+.donation p {
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.donation img{
+    width: 456px;
+    height: 477px;
+}
+.donation button {
+    margin-top: 10px;
 }
