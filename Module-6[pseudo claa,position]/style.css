@@ -1,3 +1,7 @@
+:root{
+    --primary-color: skyblue
+}
+
 *{
     margin: 0 auto;
     text-align: center;
@@ -55,3 +59,4 @@ a:visited{
 .child ul:nth-child(3){
     color: rebeccapurple;
 }
+
