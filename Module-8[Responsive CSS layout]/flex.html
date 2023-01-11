@@ -17,7 +17,7 @@
             /* align-items: center; */
             /* flex-direction: row-reverse; */
             /* align-content: stretch; */
-            flex-wrap: wrap; 
+            /* flex-wrap: wrap;  */
 
             
         }
@@ -45,7 +45,16 @@
             background: hotpink;
         }
 
+        .test h1{
+            border: 1px solid;
+            margin-top: 30px;
+        }
 
+        .test h1:nth-child(2){
+            background-color: black;
+            color: white;
+            visibility: hidden;
+        }
     </style>
 </head>
 <body>
@@ -70,5 +79,12 @@
         <h3 class="box2">JAHID</h3>
         <h3 class="box3" title="HOWLADER">HOWLADER</h3>
         <h3 class="box4">AKASH</h3>
+    </div>
+
+    <div class="test">
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+    </div>
 </body>
 </html>
