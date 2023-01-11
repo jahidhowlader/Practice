@@ -1,0 +1,77 @@
+
+:root{
+    --radius: 6px;
+    --padding: 0 20px
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+    padding: var(--padding);
+    border-radius: var(--radius);
+}
+
+.nav{
+    grid-area: nav;
+    padding: var(--padding);
+    border-radius: var(--radius);
+}
+
+.main{
+    grid-area: main;
+    padding: var(--padding);
+    border-radius: var(--radius);
+}
+
+.sidebar{
+    grid-area: sidebar;
+    padding: var(--padding);
+    border-radius: var(--radius);
+}
+
+.ad{
+    grid-area: ad;
+    padding: var(--padding);
+    border-radius: var(--radius);
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    padding: var(--padding);
+    border-radius: var(--radius);
+}
+
+.header, .nav, .main, .sidebar, .ad, .footer {
+    background-color: bisque;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+/* Grid Related Layout Style */
+.container{
+    display: grid;
+    border-radius: 10px;
+    gap: 10px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav    main   sidebar"
+    "nav    main   ad"
+    "footer footer footer";
+}
+
+
+@media screen and (max-width: 576px) {
+    .container{
+        grid-template-columns: 2fr;
+        grid-template-areas: 
+        "header header "
+        "nav    main"
+        "sidebar    ad"
+        "footer footer";
+    }
+}
