@@ -122,7 +122,9 @@ ecommerce-container
 
 .ecommerce-container{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(auto-fit, 100px);
+    gap: 60px;
+    justify-content: center;
     padding: 40px 0;
 }
 
@@ -316,16 +318,17 @@ footer p {
     .ecommerce-site{
         width: 100%;
         text-align: center;
-        display: none;
 
     }
     .ecommerce-container{
-        width: 80%;
+        width: 100%;
         grid-template-columns: repeat(4, 1fr);
+        gap: 0px;
+        justify-content: center;
     }
 
     .ecommerce-container img{
-        width: 90%;
+        width: 60%;
     }
 
     /* -------------------
