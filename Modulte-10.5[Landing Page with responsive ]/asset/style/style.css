@@ -55,6 +55,13 @@ header {
     font-weight: 600;
 }
 
+.navication-section .shop {
+    list-style: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
 .navication-section li:hover {
     color: var(--primary-color);
     cursor: pointer;
@@ -98,6 +105,27 @@ header {
     position: absolute;
     top: 30px;
 }
+
+
+/* ------------------- 
+ecommerce-container 
+--------------------*/
+.ecommerce-site{
+    width: 1110px;
+    margin: 70px auto 100px;
+}
+
+.ecommerce-site hr {
+    border: 1px solid;
+    opacity: 0.05;
+}
+
+.ecommerce-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 40px 0;
+}
+
 
 /* ------------------- 
 Our Popular Collection
@@ -182,9 +210,9 @@ Our Popular Collection
 /* --------------------------
 Feature Product Section Styles
 ----------------------------*/
-.feature{
+.feature {
     width: 1110px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
 }
 
 .feature-container {
@@ -218,6 +246,36 @@ Feature Product Section Styles
     border: none;
 }
 
+/* ------------------------ 
+     Footer Styles
+------------------------ */
+footer {
+    text-align: center;
+    background-color: #0A0826;
+    color: white;
+    padding: 50px 0;
+}
+
+footer h3 {
+    font-size: 24px;
+    font-family: var(--primary-font);
+}
+
+footer p {
+    font-size: 14px;
+    font-family: var(--primary-font);
+    padding: 3px;
+}
+
+.social i {
+    padding: 16px;
+    background: black;
+    /* opacity: 0.1; */
+    color: white;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
 
 /* ------------------------ 
      Media Queries 
@@ -227,27 +285,47 @@ Feature Product Section Styles
 @media screen and (max-width: 576px) {
     header {
         width: 100%;
-        /* padding: 0 20px; */
     }
 
-    .navication-section {
+    .navication-section li{
         display: none;
+    }
+
+    .navication-section h3{
+        font-size: 16px;
     }
 
     .header-feature {
         flex-direction: column-reverse;
+        gap: 14px;
         width: 100%;
-        display: none;
+        text-align: center;
     }
 
-    .thambnail-image {
-        width: 100%;
+    .feature-content h1 {
+        font-size: 28px;
+    }
 
-        position: absolute;
-        top: 30px;
-        bottom: 0;
-        right: 0;
-        left: 0;
+    .feature-thumbnail img {
+        width: 80%;
+    }
+
+/* 
+
+*/
+    .ecommerce-site{
+        width: 100%;
+        text-align: center;
+        display: none;
+
+    }
+    .ecommerce-container{
+        width: 80%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .ecommerce-container img{
+        width: 90%;
     }
 
     /* -------------------
@@ -277,21 +355,21 @@ Our Popular Collection
     /* --------------------------
 Feature Product Section Styles
 ----------------------------*/
-.feature {
-    width: 100%;
-}
+    .feature {
+        width: 100%;
+    }
 
-.feature-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    /* justify-content: center; */
-    width: 90%;
-    text-align: center;
-    padding-left: 20px;
+    .feature-container {
+        flex-direction: column-reverse;
+        gap: 30px;
+        width: 90%;
+        text-align: center;
+        padding-left: 20px;
 
 
-}
-.feature-container img {
-    width: 100%;
-}
+    }
+
+    .feature-container img {
+        width: 100%;
+    }
 }
