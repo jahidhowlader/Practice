@@ -28,10 +28,10 @@ body {}
 /* ----------------
 Header Section Style
 ----------------  */
-header{
+header {
     width: 1155px;
     margin: auto;
-    
+
 }
 
 .navication-section {
@@ -60,7 +60,7 @@ header{
     cursor: pointer;
 }
 
-.header-feature{
+.header-feature {
     display: flex;
     gap: 133px;
     align-items: center;
@@ -69,7 +69,7 @@ header{
 
 }
 
-.header-feature h1{
+.header-feature h1 {
     font-size: 52px;
     font-weight: 700;
 }
@@ -80,7 +80,7 @@ header{
     padding: 16px 0;
 }
 
-.header-feature button{
+.header-feature button {
     font-size: 16px;
     font-weight: 700;
     background: var(--primary-color);
@@ -90,11 +90,11 @@ header{
     border-radius: 20px;
 }
 
-.feature-thumbnail{
+.feature-thumbnail {
     position: relative;
 }
 
-.thambnail-image{
+.thambnail-image {
     position: absolute;
     top: 30px;
 }
@@ -102,13 +102,13 @@ header{
 /* ------------------- 
 Our Popular Collection
 --------------------*/
-.popular-collection{
+.popular-collection {
     width: 1047px;
     margin: 0 auto;
 
 }
 
-.popular-collection > h3{
+.popular-collection>h3 {
     font-family: var(--primary-font);
     font-size: 28px;
     color: var(--seceondary-color);
@@ -116,7 +116,8 @@ Our Popular Collection
     text-align: center;
     padding: 30px 0;
 }
-.container{
+
+.container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -124,45 +125,52 @@ Our Popular Collection
     margin: 0 auto;
 }
 
-.card{
+.card {
     padding: 17px 15px;
     border-radius: 8px;
-    box-shadow: 3px 3px 30px  #ccc;;
+    box-shadow: 3px 3px 30px #ccc;
+    ;
 }
 
-.card h3{
+.card h3 {
     font-family: var(--primary-font);
     font-size: 28px;
     font-weight: 500;
     color: var(--seceondary-color);
 }
 
-/* .card p {
-    white-space: pre-line;
+.card p {
+    /* white-space: pre-line; */
     font-family: var(--seceondary-font);
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     color: #787885
-} */
+}
 
 .card .price {
     font-family: var(--seceondary-font);
     font-size: 24px;
+    font-weight: 400;
     padding-top: 6px;
     padding-bottom: 10px;
     color: black;
 }
 
 .icon {
-    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: var(--seceondary-font);
+    font-size: 14px;
+    padding-bottom: 5px;
+
 }
+
 .card i {
     color: #FB8200;
 
 }
 
-.see-more{
+.see-more {
     text-align: right;
     font-family: var(--primary-font);
     font-size: 16px;
@@ -171,27 +179,68 @@ Our Popular Collection
     padding: 50px 0 100px;
 }
 
+/* --------------------------
+Feature Product Section Styles
+----------------------------*/
+.feature{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.feature-container {
+    display: flex;
+    gap: 96px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-container h3 {
+    font-size: 38px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    color: #0A0826;
+}
+
+.feature-container p {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    color: #6C6C6C;
+    line-height: 28px;
+    padding: 16px 0;
+}
+
+.feature-container button {
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    padding: 10px 24px;
+    background: var(--primary-color);
+    border: none;
+}
+
+
 /* ------------------------ 
      Media Queries 
 ------------------------ */
 
 /* Mobile Device */
-@media screen and ( max-width: 576px ) {
-    header{
+@media screen and (max-width: 576px) {
+    header {
         width: 100%;
         /* padding: 0 20px; */
     }
-    .navication-section{
+
+    .navication-section {
         display: none;
     }
-    .header-feature{
+
+    .header-feature {
         flex-direction: column-reverse;
         width: 100%;
         display: none;
-
-
     }
-    .thambnail-image{
+
+    .thambnail-image {
         width: 100%;
 
         position: absolute;
@@ -201,17 +250,48 @@ Our Popular Collection
         left: 0;
     }
 
-
-
-
-    .popular-collection{
+    /* -------------------
+Our Popular Collection
+---------------------*/
+    .popular-collection {
         width: 92%;
     }
-    .container{
+
+    .container {
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
     }
-    .card img{
+
+    .card img {
         width: 100%;
     }
+
+    .card h3 {
+        font-weight: 700;
+    }
+
+    .card .price {
+        font-weight: 700;
+    }
+
+    /* --------------------------
+Feature Product Section Styles
+----------------------------*/
+.feature {
+    width: 100%;
+}
+
+.feature-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    /* justify-content: center; */
+    width: 90%;
+    text-align: center;
+    padding-left: 20px;
+
+
+}
+.feature-container img {
+    width: 100%;
+}
 }
