@@ -1,4 +1,4 @@
-header{
+.header{
     /* display: flex; */
     height: 100vh;
     /* align-items: center; */
@@ -13,4 +13,8 @@ header{
     position: absolute;
     /* left: 20%; */
     top: 50%;
+}
+
+.height{
+    height: 150px;
 }
