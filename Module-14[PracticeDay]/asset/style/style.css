@@ -56,3 +56,13 @@ body{
 .navbar-nav li a:hover {
     color: var(--primary-color);
 }
+
+/* Footer Class */
+.bg-footer{
+    background-color: #0B0D17;
+    color: white;
+}
+
+.nav li a {
+    color: var(--primary-text-color);
+}
