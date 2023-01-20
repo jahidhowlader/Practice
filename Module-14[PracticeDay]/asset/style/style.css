@@ -1,0 +1,58 @@
+/* ------------------
+    Import Links 
+-------------------*/
+/* google font link */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+
+
+
+/* Utility Styles */
+
+:root{
+    --primary-color: #E76F51;
+    --primary-text-color: white;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.primary-color{
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+}
+
+.primary-color:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.primary-text{
+    color: var(--primary-color);
+}
+
+.bz-btn-outline{
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.bz-btn-outline:hover{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-text-color)
+}
+
+/* Header Section */
+.bg-header{
+    background-color: #264653;
+}
+
+.navbar-nav li a {
+    color: var(--primary-text-color);
+}
+
+.navbar-nav li a:hover {
+    color: var(--primary-color);
+}
