@@ -49,6 +49,14 @@ body{
     background-color: #264653;
 }
 
+.navbar-toggler-icon{
+    color: var(--primary-text-color);
+}
+
+.navbar-nav li {
+    padding: 15px;
+}
+
 .navbar-nav li a {
     color: var(--primary-text-color);
 }
@@ -65,4 +73,9 @@ body{
 
 .nav li a {
     color: var(--primary-text-color);
+}
+
+.nav li a:hover {
+    color: var(--primary-color);
+    cursor: pointer;
 }
