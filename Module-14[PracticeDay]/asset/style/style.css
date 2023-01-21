@@ -2,55 +2,63 @@
     Import Links 
 -------------------*/
 /* google font link */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
 
 
 
 /* Utility Styles */
 
-:root{
+:root {
     --primary-color: #E76F51;
     --primary-text-color: white;
 }
 
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-.primary-color{
+.primary-color {
     background-color: var(--primary-color);
     color: var(--primary-text-color);
 }
 
-.primary-color:hover{
+.primary-color:hover {
     background-color: transparent;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
 
-.primary-text{
+.primary-text {
     color: var(--primary-color);
 }
 
-.bz-btn-outline{
+.bz-btn-outline {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
 
-.bz-btn-outline:hover{
+.bz-btn-outline:hover {
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
     color: var(--primary-text-color)
 }
 
 /* Header Section */
-.bg-header{
+.bg-header {
     background-color: #264653;
 }
 
-.navbar-toggler-icon{
-    color: var(--primary-text-color);
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar-toggler {
+    border: 1px solid var(--primary-text-color);
+}
+
+.navbar-toggler:hover {
+    border: 1px solid var(--primary-text-color);
 }
 
 .navbar-nav li {
@@ -66,7 +74,7 @@ body{
 }
 
 /* Footer Class */
-.bg-footer{
+.bg-footer {
     background-color: #0B0D17;
     color: white;
 }
