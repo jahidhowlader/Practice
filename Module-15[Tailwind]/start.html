@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind</title>
+    <!-- Tailwind CSS Link -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
+    <!-- Google font Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome Link -->
+    <script src="https://kit.fontawesome.com/e75298b615.js" crossorigin="anonymous"></script>
+
+    <!-- Embeded CSS -->
+    <style>
+        * {
+            font-family: 'Bebas Neue', cursive;
         }
-      </script>
+        .roboto{
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        <h1 class="">text align</h1>
-    </div>
+    <!-- Header Start -->
+    <header class="bg-[#FFFBF0] pt-10 pb-32 p-4">
+        <!-- navication -->
+
+
+        <!-- Banner -->
+        <div class="container mx-auto    md:flex items-center md:space-x-40 justify-center">
+            <div class="space-y-2.5">
+                <h1 class="text-7xl"><span class="text-[#FABE4C]">Be the Penguins</span> <br> of Winter</h1>
+                <p class="text-base roboto">Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry.</p>
+                <button class="bg-gradient-to-b from-[#A4BC46] to-[#85A019] px-8 py-4 text-white rounded-lg text-base roboto uppercase font-medium"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+            </div>
+            <div>
+                <img class="w-3/4 md:w-full pt-10" src="asset/images/model.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="sm:container mx-auto pt-14 pb-24">
+        <!-- Women Jacket -->
+        <section>
+            <h2 class="text-5xl">Women Jacket</h2>
+        </section>
+    </main>
 </body>
+
 </html>
