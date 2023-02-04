@@ -78,6 +78,13 @@ function arrayOfMultiples (num, length) {
 const result = arrayOfMultiples(140, 3) //[ 140, 280, 420 ]
 console.log(result);
 */  
+
+
+
+
+
+
+
 // Mirror Array
 // Given an integer array, transform that array into a mirror.
 /*
@@ -90,5 +97,30 @@ function mirror(arr) {
 }
 
 const result = mirror([1,2,3,4,5]) // [1, 2, 3, 4, 5, 4, 3, 2, 1]
+console.log(result);
+*/
+
+
+
+
+
+
+
+// Finding Nemo
+// You're given a string of words. You need to find the word "Nemo", and return a string like this: "I found Nemo at [the order of the word you find Nemo]!". 
+// If you can't find Nemo, return "I can't find Nemo :(".
+/*
+function findNemo(sentence) {
+    let word = sentence.split(' ')
+    let count;
+    for(let i = 0; i < word.length; i++){
+        if(word[i] === 'Nemo'){
+            count = i + 1
+        }
+    }
+    return count > 0 ? "I found Nemo at " + count + "!" :  "I can't find Nemo :(" 
+}
+
+const result = findNemo("I am finding Nemo !")   // I found Nemo at 4!
 console.log(result);
 */
