@@ -124,3 +124,52 @@ function findNemo(sentence) {
 const result = findNemo("I am finding Nemo !")   // I found Nemo at 4!
 console.log(result);
 */
+
+
+
+
+
+
+// Sum of Number Elements in an Array
+// Arrays can be mixed with various types. Your task for this challenge is to sum all the number elements in the given array. Create a function that takes an array and returns the sum of all numbers in the array.
+/*
+function numbersSum(arr) {
+    let sum = 0
+    for(let i = 0; i < arr.length; i++){
+        if(typeof arr[i] === 'number'){
+            sum += arr[i]
+        }
+    }
+    return sum
+}
+
+const result = numbersSum([true, false, "123", "75"])
+console.log(result);
+*/
+
+
+
+
+
+
+// Total Volume of All Boxes
+// Given an array of boxes, create a function that returns the total volume of all those boxes combined together. A box is represented by an array with three elements: length, width and height.
+// For instance, totalVolume([2, 3, 2], [6, 6, 7], [1, 2, 1]) should return 266 since (2 x 3 x 2) + (6 x 6 x 7) + (1 x 2 x 1) = 12 + 252 + 2 = 266.
+/*
+function totalVolume(...boxes) {
+    let sum = 0
+    for(let i = 0; i< boxes.length; i++){
+        let multiples = 1
+        for(let j = 0; j < boxes[i].length; j++){
+            multiples *= boxes[i][j]
+        }
+        sum += multiples
+    }
+    return sum
+}
+
+const result = totalVolume([4, 2, 4], [3, 3, 3], [1, 1, 2], [2, 1, 1])
+const result2 = totalVolume([2, 2, 2], [2, 1, 1])
+console.log(result);
+console.log(result2);
+*/
