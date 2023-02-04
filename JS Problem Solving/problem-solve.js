@@ -1,6 +1,6 @@
 /* 
 function countTrue(arr) {
-	let result = 0
+    let result = 0
     for( let i = 0; i < arr.length; i++){
         if(arr[i] === true){
             result += 1
@@ -31,7 +31,7 @@ console.log(result);
 // Concatenate Variable Number of Input Arrays
 /* 
 function concat(...args) {
-	return args.flat()
+    return args.flat()
 }
 
 const result = concat([1, 2, 3], [4, 5], [6, 7], [2,4,9])
@@ -42,7 +42,7 @@ alternative of Array.flat()
 ---------------------------
 function concat(...args) {
     let arr = []
-	for(let i = 0; i < args.length; i++){
+    for(let i = 0; i < args.length; i++){
         for(let j = 0; j < args[i].length; j++){
             arr.push(args[i][j])
         }
@@ -67,7 +67,7 @@ console.log(result);
 /*
 function arrayOfMultiples (num, length) {
     let arr = []
-	let multiples = 1
+    let multiples = 1
     for(let i = 1; i <= length; i++){
         multiples = num * i
         arr.push(multiples)
@@ -77,7 +77,7 @@ function arrayOfMultiples (num, length) {
 
 const result = arrayOfMultiples(140, 3) //[ 140, 280, 420 ]
 console.log(result);
-*/  
+*/
 
 
 
@@ -89,7 +89,7 @@ console.log(result);
 // Given an integer array, transform that array into a mirror.
 /*
 function mirror(arr) {
-	let result = arr
+    let result = arr
     for(let i = arr.length - 2; i >= 0; i--){
         result.push(arr[i])
     }
@@ -173,3 +173,70 @@ const result2 = totalVolume([2, 2, 2], [2, 1, 1])
 console.log(result);
 console.log(result2);
 */
+
+
+
+
+
+// Special Arrays
+// An array is special if every even index contains an even number and every odd index contains an odd number. Create a function that returns true if an array is special, and false otherwise.
+/*
+function isSpecialArray(arr) {
+    let store = []
+    for (let i = 0; i < arr.length; i++) {
+        if (i % 2 === 0 && arr[i] % 2 !== 0) {
+            store.push(false)
+        } else if (i % 2 === 1 && arr[i] % 2 !== 1) {
+            store.push(false)
+        }
+    }
+    return store.length > 0 ? false : true
+}
+
+const result = isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3])
+console.log(result);
+*/
+
+
+
+
+
+/*----------------------------------------------
+                Bubble Short Algoridom
+----------------------------------------------*/
+/*
+let arr = [1, 3, 5, 4, 22, 5, 44, 6, 8, 996, 6, 4, 662, 45, 42]
+function bubbleSort(array) {
+    for (let i = 0; i < array.length - 1; i++) {
+        for (let j = 0; j < array.length - 1; j++) {
+            if (array[j] > array[j + 1]) {
+                let temp = array[j]
+                array[j] = array[j + 1]
+                array[j + 1] = temp
+            }
+        }
+    }
+    return array
+}
+
+let result = bubbleSort(arr)
+console.log(result);
+
+
+function bubbleSort(array){
+    for(let i = 0; i < array.length - 1; i++){
+        for(let j = 0; j < array.length - 1; j++){
+            if(array[j] < array[j + 1]){
+                let temp = array[j]
+                array[j] = array[j + 1]
+                array[j + 1] = temp
+            }
+        }
+    }
+    return array
+}
+
+let result = bubbleSort(arr)
+console.log(result);
+*/
+
