@@ -240,18 +240,16 @@ let result = bubbleSort(arr)
 console.log(result);
 */
 
-function reverseWords(string) {
-    let word = [];
-    let space = 0
-    for (let i = 0; i < string.length; i++) {
-        if (string[i] === ' ' && string[i - 1] !== ' ') {
-            word.push(string.slice(space, i))
-            space = i
-        } else if (string[i] === ' ') {
-            space = i + 1
-        }
-    }
-    return word
-}
 
-console.log(reverseWords("a good example"));
+
+
+// Write a function. It will take three parameters. These three parameters will be the lengths of the three sides of a triangle. Now your task is to calculate the area of the triangle by doing some calculations inside the function.
+/*
+function calculateTriangleArea(side1, side2, side3) {
+    let semiPerimeter = (side1 + side2 + side3) / 2;
+    let area = Math.sqrt(semiPerimeter * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3));
+    return area;
+  }
+
+  console.log(calculateTriangleArea(6,8,2));
+  */
