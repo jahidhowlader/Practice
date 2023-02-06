@@ -240,3 +240,18 @@ let result = bubbleSort(arr)
 console.log(result);
 */
 
+function reverseWords(string) {
+    let word = [];
+    let space = 0
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] === ' ' && string[i - 1] !== ' ') {
+            word.push(string.slice(space, i))
+            space = i
+        } else if (string[i] === ' ') {
+            space = i + 1
+        }
+    }
+    return word
+}
+
+console.log(reverseWords("a good example"));
