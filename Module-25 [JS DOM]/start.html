@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+</head>
+
+<body>
+
+    <section id="id">
+        <h1>Hello World</h1>
+        <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam exercitationem
+            quaerat quis aperiam harum consequuntur!</p>
+    </section>
+    <section class="class">
+        <h1>Hello Javacript</h1>
+        <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam exercitationem
+            quaerat quis aperiam harum consequuntur!</p>
+    </section class="class" >
+    <section>
+        <h1>Hello DOM</h1>
+        <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam exercitationem
+            quaerat quis aperiam harum consequuntur!</p>
+    </section>
+    <section class="query">
+        <h1>Hello React</h1>
+        <p>4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam exercitationem
+            quaerat quis aperiam harum consequuntur!</p>
+    </section>
+    <section class="queryAll">
+        <h1>Hello Node</h1>
+        <p>5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam exercitationem
+            quaerat quis aperiam harum consequuntur!</p>
+    </section>
+
+
+    <script>
+        const getElementsByTag = document.getElementsByTagName('p');
+        const getElementById = document.getElementById('id');
+        const getElementsByClass = document.getElementsByClassName('class')
+        const getQuery = document.querySelector('.class')
+        const getQueryAll = document.querySelectorAll('p')
+            
+
+
+        console.log(getElementsByTag);
+        console.log(getElementById);
+        console.log(getElementsByClass);
+        console.log(getQuery);
+        console.log(getQueryAll);
+    </script>
+
+</body>
+
+</html>
