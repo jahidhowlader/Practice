@@ -50,6 +50,10 @@
                 quaerat quis aperiam harum consequuntur!</p>
         </section> -->
 
+        <section id="checkClassList">
+            <div class="a b c d"></div>
+        </section>
+
     </main>
 
 
@@ -66,7 +70,7 @@
         const dynamicSection = document.createElement('section')
         dynamicSection.innerHTML = `
         <h1>Dynamic HTML</h1>
-        <ul>
+        <ul id="unorder-list">
             <li>Dynamic unorder list1</li>    
             <li>Dynamic unorder list2</li>    
             <li>Dynamic unorder list3</li>    
@@ -96,7 +100,7 @@
         shoppingConteainer.appendChild(shoppingLists)
         shoppingLists.appendChild(shoppingList)
         
-
+        const checkList = document.querySelector('.a')
 
 
 
