@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+        <h1>Delete And Create Elements</h1>
+        <ul id="container-list">
+            <li class="list-item">ashs ajhsash</li>
+            <li class="list-item">jhehd dhuds</li>
+            <li class="list-item">idshd isdhn</li>
+            <li class="list-item">hdb i</li>
+            <li class="list-item">hdyhdsh d</li>
+        </ul>
+        <button id="create-li">Create List</button>
+    </section>
+
+
+    <script>
+        document.getElementById('container-list').addEventListener('click', function(event){
+            event.target.parentNode.removeChild(event.target)
+        })
+
+        document.getElementById('create-li').addEventListener('click', function () {
+            const ul = document.getElementById('container-list')
+            const li = document.createElement('li');
+            li.innerText = 'this is a dynamic one'
+            li.classList.add('list-item') // it's optional, if you want add classname then you can do it.
+            ul.appendChild(li)
+        })
+
+        
+    </script>
+</body>
+
+</html>
