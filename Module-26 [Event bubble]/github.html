@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Delete this header Title</h1>
+        <small>if you want to delete this so please try to write delete in input feild</small>
+    </div>
+    <br> <br>
+    <input id="input" type="text">
+    <button id="delete-btn" disabled>delete</button>
+
+    <script>
+
+        document.getElementById('input').addEventListener('keyup', function (event) {
+            // const button = document.getElementById('delete-btn');
+
+            if ( event.target.value === 'delete') {
+                document.getElementById('delete-btn').removeAttribute('disabled')
+            } else{
+                document.getElementById('delete-btn').  setAttribute('disabled', true)
+            }
+
+        })
+
+        document.getElementById('delete-btn').addEventListener('click', function () {
+            document.getElementById('header').style.display = 'none'
+        })
+    </script>
+</body>
+
+</html>
