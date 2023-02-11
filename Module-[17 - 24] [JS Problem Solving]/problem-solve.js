@@ -253,3 +253,25 @@ function calculateTriangleArea(side1, side2, side3) {
 
   console.log(calculateTriangleArea(6,8,2));
   */
+
+
+
+
+
+
+
+
+//   Resursion Function 
+/*
+function recurstion(number){
+    if(number <= 1){
+        return 1
+    }
+
+    return recurstion(number - 1)
+}
+
+console.log(recurstion(5));
+*/
+
+
