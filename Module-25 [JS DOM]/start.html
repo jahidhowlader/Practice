@@ -6,35 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS DOM</title>
+    <style>
+        
+    </style>
 </head>
 
 <body>
+    <main id="main-container">
+        <!-- <section id="id">
+            <h1>Hello World</h1>
+            <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam
+                exercitationem
+                quaerat quis aperiam harum consequuntur!</p>
+        </section>
+        <section class="class">
+            <h1>Hello Javacript</h1>
+            <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam
+                exercitationem
+                quaerat quis aperiam harum consequuntur!</p>
+        </section>
+        <section class="class">
+            <h1>Hello DOM</h1>
+            <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam
+                exercitationem
+                quaerat quis aperiam harum consequuntur!</p>
+        </section>
+        <section class="class">
+            <h1>Hello DOM</h1>
+            <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam
+                exercitationem
+                quaerat quis aperiam harum consequuntur!</p>
+        </section>
+        <section class="query">
+            <h1>Hello React</h1>
+            <p>4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam
+                exercitationem
+                quaerat quis aperiam harum consequuntur!</p>
+        </section>
+        <section class="queryAll">
+            <h1>Hello Node</h1>
+            <p>5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam
+                exercitationem
+                quaerat quis aperiam harum consequuntur!</p>
+        </section> -->
 
-    <section id="id">
-        <h1>Hello World</h1>
-        <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam exercitationem
-            quaerat quis aperiam harum consequuntur!</p>
-    </section>
-    <section class="class">
-        <h1>Hello Javacript</h1>
-        <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam exercitationem
-            quaerat quis aperiam harum consequuntur!</p>
-    </section class="class" >
-    <section>
-        <h1>Hello DOM</h1>
-        <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam exercitationem
-            quaerat quis aperiam harum consequuntur!</p>
-    </section>
-    <section class="query">
-        <h1>Hello React</h1>
-        <p>4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam exercitationem
-            quaerat quis aperiam harum consequuntur!</p>
-    </section>
-    <section class="queryAll">
-        <h1>Hello Node</h1>
-        <p>5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse vero totam tenetur ipsam exercitationem
-            quaerat quis aperiam harum consequuntur!</p>
-    </section>
+    </main>
+
+
 
 
     <script>
@@ -43,14 +61,50 @@
         const getElementsByClass = document.getElementsByClassName('class')
         const getQuery = document.querySelector('.class')
         const getQueryAll = document.querySelectorAll('p')
-            
+
+        const mainContainer = document.getElementById('main-container')
+        const dynamicSection = document.createElement('section')
+        dynamicSection.innerHTML = `
+        <h1>Dynamic HTML</h1>
+        <ul>
+            <li>Dynamic unorder list1</li>    
+            <li>Dynamic unorder list2</li>    
+            <li>Dynamic unorder list3</li>    
+        </ul>
+        `
+        dynamicSection.style.textAlign = 'center'
+        mainContainer.appendChild(dynamicSection)
+
+        const section = document.createElement('section')
+        section.style.textAlign = 'center'
+        const header = document.createElement('h1')
+        header.innerHTML = 'Hello Header'
+        section.appendChild(header)
+
+        mainContainer.appendChild(section)
+        
+
+        const shoppingConteainer = document.createElement('section')
+        const shoppingHeader = document.createElement('h1')
+        shoppingHeader.innerText = 'What i need right now?'
+        const shoppingLists = document.createElement('ul')
+        const shoppingList = document.createElement('li')
+        shoppingList.innerText = 'SSD Card'
+
+        mainContainer.appendChild(shoppingConteainer)
+        shoppingConteainer.appendChild(shoppingHeader)
+        shoppingConteainer.appendChild(shoppingLists)
+        shoppingLists.appendChild(shoppingList)
+        
 
 
-        console.log(getElementsByTag);
-        console.log(getElementById);
-        console.log(getElementsByClass);
-        console.log(getQuery);
-        console.log(getQueryAll);
+
+
+        // console.log(getElementsByTag);
+        // console.log(getElementById);
+        // console.log(getElementsByClass);
+        // console.log(getQuery);
+        // console.log(getQueryAll);
     </script>
 
 </body>
