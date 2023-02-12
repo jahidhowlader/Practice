@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryColor: '#60BC63',
+                        secondaryColor: '#FFA843',
+                        commonColor: ''
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-7xl font-semibold mx-auto md:w-1/2 text-primaryColor text-center">Authentication Section</h1>
+    </header>
+
+    <main>
+        <section class="bg-secondaryColor mt-12 p-10 w-full md:w-1/2 md:mx-auto rounded-lg">
+            <input id="user-email" class="w-full block p-3 rounded-lg" type="email" placeholder="Enter your email">
+            <input id="user-password" class="w-full block p-3 rounded-lg my-3" type="password"
+                placeholder="Enter your password">
+            <button id="auth-submit"
+                class="bg-primaryColor hover:bg-white hover:text-primaryColor text-white py-3 px-5 rounded-lg font-bold">Submit</button>
+        </section>
+    </main>
+
+    <script src="script/authentic.js"></script>
+</body>
+
+</html>
