@@ -28,15 +28,15 @@
             <div class="grid grid-cols-3 text-white gap-2 ">
                 <div class="bg-green-900 p-5 rounded-lg shadow-md">
                     <h4 class="text-3xl">Deposit</h4>
-                    <h2 class="text-5xl">$<span>00</span></h2>
+                    <h2 class="text-5xl">$<span id="deposit-ammount">00</span></h2>
                 </div>
                 <div class="bg-rose-900	 p-5 rounded-lg shadow-md">
                     <h4 class="text-3xl">Wihdraw</h4>
-                    <h2 class="text-5xl">$<span>00</span></h2>
+                    <h2 class="text-5xl">$<span id="withdraw-ammount">00</span></h2>
                 </div>
                 <div class="bg-sky-900 p-5 rounded-lg shadow-md">
                     <h4 class="text-3xl">Total Ammount</h4>
-                    <h2 class="text-5xl">$<span>00</span></h2>
+                    <h2 class="text-5xl">$<span id="total-ammount">1290</span></h2>
                 </div>
             </div>
         </section>
@@ -45,18 +45,19 @@
             <div class="grid grid-cols-2 text-white gap-2 mt-12">
                 <div class="bg-green-600 p-5 rounded-lg shadow-md">
                     <h4 class="text-3xl">Please Your Deposit Ammount</h4>
-                    <input class="w-full text-sky-900 p-3 text-2xl font-bold my-3" type="text">
-                    <button class="bg-white hover:bg-rose-600 hover:text-white text-sky-900 py-2 px-5 font-bold ">Enter</button>
+                    <input id="deposite-input" class="w-full text-sky-900 p-3 text-2xl font-bold my-3" type="text">
+                    <button id="deposite-submit" class="bg-white hover:bg-rose-600 hover:text-white text-sky-900 py-2 px-5 font-bold ">Enter</button>
                 </div>
                 <div class="bg-rose-600	 p-5 rounded-lg shadow-md">
                     <h4 class="text-3xl">Please Your Withdraw Ammount</h4>
-                    <input class="w-full text-sky-900 p-3 text-2xl font-bold my-3" type="text">
-                    <button class="bg-white hover:bg-green-600 hover:text-white text-sky-900 py-2 px-5 font-bold ">Enter</button>
+                    <input id="withdraw-input" class="w-full text-sky-900 p-3 text-2xl font-bold my-3" type="text">
+                    <button id="withdraw-submit" class="bg-white hover:bg-green-600 hover:text-white text-sky-900 py-2 px-5 font-bold ">Enter</button>
                 </div>
             </div>
         </section>
     </main>
 
+    <script src="script/deposit.js"></script>
 </body>
 
 </html>
