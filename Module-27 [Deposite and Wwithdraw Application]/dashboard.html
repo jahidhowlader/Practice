@@ -10,8 +10,6 @@
             theme: {
                 extend: {
                     colors: {
-                        primaryColor: '#60BC63',
-                        secondaryColor: '#FFA843',
                         commonColor: '#F8F8F8'
                     }
                 }
@@ -23,7 +21,7 @@
 <body>
     <header>
         <h1 class="text-7xl font-semibold mx-auto md:w-1/2 text-center">Welcome back, <span
-                class="text-primaryColor">Vicky Zahid</span>!!</h1>
+                class="text-green-900">Vicky Zahid</span>!!</h1>
     </header>
     <main class="bg-commonColor w-1/2 mx-auto mt-12 p-10 rounded-xl shadow-md">
         <section>
@@ -46,12 +44,14 @@
         <section>
             <div class="grid grid-cols-2 text-white gap-2 mt-12">
                 <div class="bg-green-600 p-5 rounded-lg shadow-md">
-                    <h4 class="text-3xl">Deposit</h4>
-                    <h2 class="text-5xl">$<span>00</span></h2>
+                    <h4 class="text-3xl">Please Your Deposit Ammount</h4>
+                    <input class="w-full text-sky-900 p-3 text-2xl font-bold my-3" type="text">
+                    <button class="bg-white hover:bg-rose-600 hover:text-white text-sky-900 py-2 px-5 font-bold ">Enter</button>
                 </div>
                 <div class="bg-rose-600	 p-5 rounded-lg shadow-md">
-                    <h4 class="text-3xl">Wihdraw</h4>
-                    <h2 class="text-5xl">$<span>00</span></h2>
+                    <h4 class="text-3xl">Please Your Withdraw Ammount</h4>
+                    <input class="w-full text-sky-900 p-3 text-2xl font-bold my-3" type="text">
+                    <button class="bg-white hover:bg-green-600 hover:text-white text-sky-900 py-2 px-5 font-bold ">Enter</button>
                 </div>
             </div>
         </section>
