@@ -24,9 +24,9 @@
         <h1 class="text-7xl font-semibold mx-auto md:w-1/2 text-center">Welcome back, <span
                 class="text-green-900">Vicky Zahid</span>!!</h1>
     </header>
-    <main class="bg-commonColor w-1/2 mx-auto mt-12 p-10 rounded-xl shadow-md">
+    <main class="bg-commonColor md:w-1/2 mx-auto mt-12 p-10 rounded-xl shadow-md">
         <section>
-            <div class="grid grid-cols-3 text-white gap-2 ">
+            <div class="grid grid-cols-1 md:grid-cols-3 text-white gap-2 ">
                 <div class="bg-green-900 p-5 rounded-lg shadow-md">
                     <h4 class="text-3xl">Deposit</h4>
                     <h2 class="text-5xl">$<span id="deposit-ammount">00</span></h2>
@@ -43,7 +43,7 @@
         </section>
 
         <section>
-            <div class="grid grid-cols-2 text-white gap-2 mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 text-white gap-2 mt-12">
                 <div class="bg-green-600 p-5 rounded-lg shadow-md">
                     <h4 class="text-3xl">Please Your Deposit Ammount</h4>
                     <input id="deposite-input" class="w-full text-sky-900 p-3 text-2xl font-bold my-3" type="text">
@@ -58,6 +58,7 @@
         </section>
     </main>
 
+    <script src="script/utilities.js"></script>
     <script src="script/deposit.js"></script>
     <script src="script/withdraw.js"></script>
 </body>
