@@ -31,7 +31,7 @@
         document.getElementById('create-li').addEventListener('click', function () {
             const ul = document.getElementById('container-list')
             const li = document.createElement('li');
-            li.innerText = 'this is a dynamic one'
+            li.innerText = 'this is a dynamic {$}'
             li.classList.add('list-item') // it's optional, if you want add classname then you can do it.
             ul.appendChild(li)
         })
