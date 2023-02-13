@@ -6,13 +6,18 @@ document.getElementById('deposite-submit').addEventListener('click', function ()
     const validationCheck = +getDepositInput
     if (isNaN(validationCheck)) {
         validationRejectAlert()
-    } else if (String(getDepositInput).length > 8) { 
-        alert('You can total deposit only 99999999')
+    } else if (String(getDepositInput).length > 7) {
+        alert('You can total deposit only 9999999')
     } else {
         const updateDepositValue = getDepositInput + getDipositTotal
-        setTotalValue('deposit-ammount', updateDepositValue)
+        if (updateDepositValue > 9999999) {
+            alert(`you Can't deposit more than $9999999`)
+        }
+        else {
+            setTotalValue('deposit-ammount', updateDepositValue)
 
-        const updateTotalValue = getTotalAmmount + getDepositInput
-        setTotalValue('total-ammount', updateTotalValue)
+            const updateTotalValue = getTotalAmmount + getDepositInput
+            setTotalValue('total-ammount', updateTotalValue)
+        }
     }
 })
