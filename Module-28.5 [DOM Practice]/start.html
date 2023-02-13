@@ -1,13 +1,123 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryColor: '#FFA600',
+                        secondaryColor: '#DAE8E5',
+                        cardBg: '#F5F9F8'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+            color: #494544;
+        }
+    </style>
 </head>
-<body>
-  <section>
-    
-  </section>
+
+<body class="bg-secondaryColor w-10/12 mx-auto">
+    <main class="rounded-xl shadow-2xl bg-white">
+        <section class="mt-20 md:pt-12 md:px-24">
+            <div class="flex justify-between items-center">
+                <div class="p-5 md:p-0">
+                    <img src="image/logo.png" alt="">
+                </div>
+                <div class="hidden md:block">
+                    <img src="image/hemburger.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="px-5 md:my-20 md:py-12 md:pl-28 md:pr-24">
+            <!-- Shopping cart Cuppon -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Shoping Cart -->
+                <div>
+                    <div class="bg-cardBg drop-shadow-md">
+                        <h3 class="text-center py-2"><span class="text-2xl font-bold">A.</span>DESIGN</h3>
+                        <div class="grid grid-cols-2 items-center">
+                            <div>
+                                <img src="image/cart.png" alt="">
+                            </div>
+                            <div class="px-8">
+                                <h5 class="font-bold">Dark Blue A.Design Jacket</h5>
+                                <!-- <small>Circular Wool By A.design, Tbilsi</small> -->
+                                <p class="pt-8">Price:</p>
+                                <p class="font-bold text-2xl">1000 Taka</p>
+                                <button id="checkout" class="bg-primaryColor block px-5 py-1 mt-2 text-xl rounded hover:bg-yellow-500"> Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cuppon Section -->
+                <div class="">
+                    <h2 class="text-3xl  md:text-5xl font-bold">Shopping Cart</h2>
+                    <div class="flex mt-16 gap-12">
+                        <!-- Shopping Cart thumbnail -->
+                        <div>
+                            <img src="image/token.png" alt="">
+                        </div>
+
+                        <!-- Cuppon Token    -->
+                        <div class="w-3/5">
+                            <input class="border-b-2 border-primaryColor block w-full py-3 px-5" type="text"
+                                placeholder="Please enter your cuppon code">
+                                <button class="bg-primaryColor block py-2 px-5 text-xl rounded mt-5 mx-auto hover:bg-yellow-500">Continiue   Checkout</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Discount Calculation Section -->
+                <div>
+                    <div class="bg-cardBg py-12 px-10 rounded-2xl">
+                        <div class="flex justify-between items-center">
+                            <h5>Subtotal</h5>
+                            <p>00 Taka.</p>
+                        </div>
+                        <hr class="my-5">
+                        <div class="flex justify-between items-center">
+                            <h5>Discount</h5>
+                            <p>00 Taka.</p>
+                        </div>
+                        <hr class="my-5">
+                        <div class="flex justify-between items-start ">
+                            <h3 class="text-3xl ">Total</h3>
+                            <div>
+                                <h3 class="text-3xl text-right">00 Taka.</h3>
+                                <small>Additional fee and Tax may apply</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Payment method -->
+                    <div class="bg-cardBg py-5 px-10 rounded-2xl my-2">
+                        <small>Accpt Payment Method</small>
+                        <div class="flex justify-between mt-3">
+                            <img src="image/pament1.png" alt="">
+                            <img src="image/pament2.png" alt="">
+                            <img src="image/pament3.png" alt="">
+                            <img src="image/pament2.png" alt="">
+                            <img src="image/pament2.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Process Button -->
+                    <div class="bg-cardBg py-5 px-10 rounded-2xl my-2">
+                        <button class="bg-primaryColor block w-full font-bold text-xl  py-4 rounded-lg hover:bg-yellow-500  ">Proceed</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
