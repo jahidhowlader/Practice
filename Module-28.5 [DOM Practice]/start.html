@@ -45,7 +45,7 @@
                 <!-- Shoping Cart -->
                 <div>
                     <div class="bg-cardBg drop-shadow-md">
-                        <h3 class="text-center py-2"><span class="text-2xl font-bold">A.</span>DESIGN</h3>
+                        <h3 class="text-center py-2 bg-white"><span class="text-2xl font-bold">A.</span>DESIGN</h3>
                         <div class="grid grid-cols-2 items-center">
                             <div>
                                 <img src="image/cart.png" alt="">
@@ -63,7 +63,7 @@
                 <!-- Cuppon Section -->
                 <div class="">
                     <h2 class="text-3xl  md:text-5xl font-bold">Shopping Cart</h2>
-                    <div class="flex mt-16 gap-12">
+                    <div class="flex mt-16 gap-8">
                         <!-- Shopping Cart thumbnail -->
                         <div>
                             <img src="image/token.png" alt="">
@@ -71,9 +71,9 @@
 
                         <!-- Cuppon Token    -->
                         <div class="w-3/5">
-                            <input class="border-b-2 border-primaryColor block w-full py-3 px-5" type="text"
+                            <input id="cuppon-code" class="border-b-2 border-primaryColor block w-full py-3 px-5" type="text"
                                 placeholder="Please enter your cuppon code">
-                                <button class="bg-primaryColor block py-2 px-5 text-xl rounded mt-5 mx-auto hover:bg-yellow-500">Continiue   Checkout</button>
+                                <button id="cuppon-btn" class="bg-primaryColor block py-2 px-5 text-xl rounded mt-5 mx-auto hover:bg-yellow-500">Continiue   Checkout</button>
                         </div>
                     </div>
                 </div>
@@ -83,18 +83,18 @@
                     <div class="bg-cardBg py-12 px-10 rounded-2xl">
                         <div class="flex justify-between items-center">
                             <h5>Subtotal</h5>
-                            <p>00 Taka.</p>
+                            <p><span id="subtotal">00</span> Taka.</p>
                         </div>
                         <hr class="my-5">
                         <div class="flex justify-between items-center">
                             <h5>Discount</h5>
-                            <p>00 Taka.</p>
+                            <p><span id="discount-ammount">00</span> Taka.</p>
                         </div>
                         <hr class="my-5">
                         <div class="flex justify-between items-start ">
                             <h3 class="text-3xl ">Total</h3>
                             <div>
-                                <h3 class="text-3xl text-right">00 Taka.</h3>
+                                <h3 class="text-3xl text-right"><span id="total">00</span> Taka.</h3>
                                 <small>Additional fee and Tax may apply</small>
                             </div>
                         </div>
@@ -112,12 +112,14 @@
                     </div>
                     <!-- Process Button -->
                     <div class="bg-cardBg py-5 px-10 rounded-2xl my-2">
-                        <button class="bg-primaryColor block w-full font-bold text-xl  py-4 rounded-lg hover:bg-yellow-500  ">Proceed</button>
+                        <button id="proceed-btn" class="bg-primaryColor block w-full font-bold text-xl  py-4 rounded-lg hover:bg-yellow-500 " disabled>Proceed</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="script/start.js"></script>
 </body>
 
 </html>

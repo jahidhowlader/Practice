@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryColor: '#FFA600',
+                        secondaryColor: '#DAE8E5',
+                        cardBg: '#F5F9F8'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+            color: #494544;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/e75298b615.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-secondaryColor w-10/12 mx-auto">
+    <main class="rounded-xl shadow-2xl bg-white">
+        <section class="mt-20 md:pt-12 md:px-24">
+            <div class="flex justify-between items-center">
+                <div class="p-5 md:p-0">
+                    <img src="image/logo.png" alt="">
+                </div>
+                <div class="hidden md:block">
+                    <img src="image/hemburger.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="mt-20 md:pt-12 md:px-24">
+            <div class="flex justify-between items-center">
+                <div>
+                    <button id="bold" class="mr-5 font-medium">B</button>
+                    <button class="mr-5 italic ">I</button>
+                    <button class="underline underline-offset-2">U</button>
+                </div>
+                <div class="flex gap-5">
+                    <i class="fa-solid fa-align-left"></i>
+                    <i class="fa-solid fa-align-center"></i>
+                    <i class="fa-solid fa-align-right"></i>
+                    <i class="fa-solid fa-align-justify"></i>
+                </div>
+                <div class="flex gap-5">
+                    <p>17</p>
+                    <p>aA</p>
+                    <p>1asas</p>
+                </div>
+            </div>
+        </section>
+        <section class=" md:pb-12 md:px-24">
+            <textarea class="bg-cardBg mt-12 w-full" name="" id="textarea"  rows="10"></textarea>
+        </section>
+    </main>
+
+    <script src="script/textArea.js"></script>
+</body>
+
+</html>
