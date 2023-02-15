@@ -95,7 +95,7 @@ document.getElementById('text-transform').addEventListener('click', function () 
 
 })
 
-document.getElementById('font-size').addEventListener('focusout', function(){
+document.getElementById('font-size').addEventListener('keyup', function(){
     const fontSizeElement = document.getElementById('font-size')
     textArea.style.fontSize = fontSizeElement.value + 'px'
 })
