@@ -44,24 +44,25 @@
             <div class="flex justify-between items-center">
                 <div>
                     <button id="bold" class="mr-5 font-medium">B</button>
-                    <button class="mr-5 italic ">I</button>
-                    <button class="underline underline-offset-2">U</button>
+                    <button id="text-italic" class="mr-5 italic ">I</button>
+                    <button id="text-underline" class="underline underline-offset-2">U</button>
                 </div>
                 <div class="flex gap-5">
-                    <i class="fa-solid fa-align-left"></i>
-                    <i class="fa-solid fa-align-center"></i>
-                    <i class="fa-solid fa-align-right"></i>
-                    <i class="fa-solid fa-align-justify"></i>
+                    <i id="left-align" class="fa-solid fa-align-left"></i>
+                    <i id="center-align" class="fa-solid fa-align-center"></i>
+                    <i id="right-align" class="fa-solid fa-align-right"></i>
+                    <i id="justify-align" class="fa-solid fa-align-justify"></i>
                 </div>
                 <div class="flex gap-5">
-                    <p>17</p>
-                    <p>aA</p>
+                    <input id="font-size" class="w-10" type="number" placeholder="17">
+                    <button id="text-transform">aA</button>
                     <p>1asas</p>
+
                 </div>
             </div>
         </section>
-        <section class=" md:pb-12 md:px-24">
-            <textarea class="bg-cardBg mt-12 w-full" name="" id="textarea"  rows="10"></textarea>
+        <section class=" md:pb-12 md:px-24 ">
+            <textarea class="bg-cardBg mt-12 w-full p-5 " name="" id="textarea" ></textarea>
         </section>
     </main>
 
