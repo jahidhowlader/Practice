@@ -1,11 +1,10 @@
-function selectAmmountCatagory (elementId){
-    // const totalAmmount = document.getElementById(elementId)
-    // const totalAmmountString = totalAmmount.innerText
-    // const previousAmmount = parseFloat(totalAmmountString).toFixed(2)
-    // console.log(previousAmmount);
-}
+
+
 
 function updateFeatureQuantity(quantityItemId, incrase, updateAmmountId, itemPrice) {
+
+    const casevalue = document.getElementById('case-quantity')
+    console.log((+casevalue.value) + 1);
 
     const quantity = document.getElementById(quantityItemId)
     const quantityString = quantity.value
@@ -36,7 +35,6 @@ function updateFeatureQuantity(quantityItemId, incrase, updateAmmountId, itemPri
     subTotalAmmount.innerText = parseInt(phoneAmmount.innerText) + parseInt(caseAmmount.innerText)
     taxAmmount.innerText = (parseFloat(subTotalAmmount.innerText) * .1).toFixed(2)
     totalAmmount.innerText = (parseFloat(subTotalAmmount.innerText) + parseFloat(taxAmmount.innerText)).toFixed(2)
-
-
 }
+
 
