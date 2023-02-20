@@ -15,3 +15,19 @@ const triangle = n => {
 }
 
 console.log(triangle(6));
+console.log(triangle(215));
+
+// Array of Multiples
+// Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
+
+const arrayOfMultiples = (num, length) => {
+    let result = []
+    for(let i = 1; i <= length; i++ ){
+        result.push(num * i)
+    }
+    return result
+}
+
+console.log(arrayOfMultiples(17, 6));
+console.log(arrayOfMultiples(12, 10));
+
