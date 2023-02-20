@@ -17,6 +17,11 @@ const triangle = n => {
 console.log(triangle(6));
 console.log(triangle(215));
 
+
+
+
+
+
 // Array of Multiples
 // Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
 
@@ -31,3 +36,23 @@ const arrayOfMultiples = (num, length) => {
 console.log(arrayOfMultiples(17, 6));
 console.log(arrayOfMultiples(12, 10));
 
+
+
+
+
+// Reverse Words in a String
+// Given an input string, reverse the string word by word, the first word will be the last, and so on.
+const reverseWords = str => {
+    let trimStr = str.trim()
+    let splitStr = trimStr.split(' ')
+    let result = []
+    for(const word of splitStr){
+        if(word !== ''){
+            result.push(word)
+        }
+    }
+    return result.reverse().join(' ')
+}
+
+console.log(reverseWords(" the sky is blue"));
+console.log(reverseWords("hello   world!  "));
