@@ -63,3 +63,7 @@ const map = [1,2,3,4,5].map(x => x * 5)
 // map.map(x => x * 5)
 
 console.log(map);
+
+const filter = ['Jahid', 'bithi', 'jannat', 'Anny'].filter(x => x.toLocaleLowerCase()[0] === 'j')
+
+console.log(filter);
