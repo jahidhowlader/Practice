@@ -14,8 +14,8 @@ const triangle = n => {
     return result
 }
 
-console.log(triangle(6));
-console.log(triangle(215));
+// console.log(triangle(6));
+// console.log(triangle(215));
 
 
 
@@ -33,8 +33,8 @@ const arrayOfMultiples = (num, length) => {
     return result
 }
 
-console.log(arrayOfMultiples(17, 6));
-console.log(arrayOfMultiples(12, 10));
+// console.log(arrayOfMultiples(17, 6));
+// console.log(arrayOfMultiples(12, 10));
 
 
 
@@ -54,5 +54,12 @@ const reverseWords = str => {
     return result.reverse().join(' ')
 }
 
-console.log(reverseWords(" the sky is blue"));
-console.log(reverseWords("hello   world!  "));
+// console.log(reverseWords(" the sky is blue"));
+// console.log(reverseWords("hello   world!  "));
+
+
+
+const map = [1,2,3,4,5].map(x => x * 5)
+// map.map(x => x * 5)
+
+console.log(map);
