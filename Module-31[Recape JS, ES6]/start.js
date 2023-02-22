@@ -66,4 +66,17 @@ console.log(map);
 
 const filter = ['Jahid', 'bithi', 'jannat', 'Anny'].filter(x => x.toLocaleLowerCase()[0] === 'j')
 
-console.log(filter);
+// console.log(filter);
+
+class Car {
+    constructor(name, color){
+        this.name = name;
+        this.color = color
+        return name + ' ' + color
+        return `${this.name} ${this.color}`
+    }
+}
+
+const audi = new Car('Audi', 'White')
+
+console.log(audi);
