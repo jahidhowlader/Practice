@@ -17,6 +17,8 @@ const showAllCountry = countries => {
         `
         container.appendChild(flag)
     })
+
+    console.log(countries[0]);
 }
 
 /*
@@ -165,6 +167,12 @@ document.getElementById('oceania').addEventListener('click', function () {
     loadRegion('oceania')
 })
 
+
+/*
+---------------------------------------------------------------------
+------------------------Language------------------------------------
+--------------------------------------------------------------------
+*/
 
 
 
