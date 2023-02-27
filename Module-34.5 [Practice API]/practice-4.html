@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            height: 100vh;
+        }
+
+        .background {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: purple;
+            /* height: 200px; */
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        input {
+            padding: 10px 200px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 50px;
+            margin-left: 20px;
+            background-color: skyblue;
+            border: 0px;
+
+        }
+        .result{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="container">
+        <div class="background">
+            <div>
+                <input id="input" type="text" placeholder="Shorten a link here">
+                <button onclick="shortLink()">shorten it!</button>
+                <br>
+            </div>
+            <div id="" class="result">
+                <h1>Your Shorten Link below: </h1>
+                <hr>
+                <div id="container"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script/practice-4.js"></script>
+</body>
+
+</html>
