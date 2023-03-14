@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .btn{
+            background: red;
+            padding: 11px 30px;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container mx-auto text-center">
+        <h1 class="text-4xl mb-12">Please Contact me</h1>
+
+        <div class="flex justify-center items-center gap-3">
+            <input id="name-input" class="border-2 p-3 rounded" type="text" placeholder="Name">
+            <button id="del-name" class="btn">delete Name</button>
+            <button id="send-name" class="btn">send Name</button>
+        </div>
+
+        <div class="flex justify-center items-center gap-3 mt-5">
+            <input id="email-input" class="border-2 p-3 rounded" type="email" placeholder="email">
+            <button id="del-email" class="btn">delete Name</button>
+            <button id="send-email" class="btn">send Email</button>
+        </div>
+        
+        <div class="flex justify-center items-center gap-3 mt-5">
+            <input id="messege-input" class="border-2 p-3 rounded" type="text" placeholder="messege">
+            <button id="del-messege" class="btn">delete Name</button>
+            <button id="send-messege" class="btn">send Messege</button>
+        </div>
+
+        <button onclick="allSend()" class="btn mt-12">Send</button>
+        <button onclick="reset()" class="btn mt-12 bg-yellow-500">Reset</button>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
